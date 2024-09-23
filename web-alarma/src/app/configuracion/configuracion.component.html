@@ -1,86 +1,37 @@
-<div class="grid grid-cols-4 gap-4 p-4">
-  <div><span class="ml-3 text-gray-700">Configurar ubicación en tiempo real</span></div>
-  <!-- ... -->
-  <div>
-    <div class="relative">
-      <input id="toggle" type="checkbox" class="hidden" />
-      <div class="block bg-gray-300 w-14 h-8 rounded-full"></div>
-      <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
-    </div>
-  </div>
-</div>
+<app-toggle
+id="tiempoReal"
+label="Configurar ubicación en tiempo real" 
+[checked]="options['tiempoReal']"
+(change)='onToggleChange($event, "tiempoReal")'></app-toggle>
 
 
-<div class="grid grid-cols-4 gap-4 p-4">
-  <div>
-    <span class="ml-3 text-gray-700">Enviar alertas a las autoridades</span>
-  </div>
-  <!-- ... -->
-  <div>
-    <div class="relative">
-      <input id="toggle" type="checkbox" class="hidden" />
-      <div class="block bg-gray-300 w-14 h-8 rounded-full"></div>
-      <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
-    </div>
-  </div>
-</div>
+<app-toggle 
+id="autoridades"
+label="Enviar alertas a las autoridades" 
+[checked]="options['autoridades']"
+(change)='onToggleChange($event, "autoridades")'></app-toggle>
 
-<div class="grid grid-cols-4 gap-4 p-4">
-  <div>
-    <span class="ml-3 text-gray-700">Enviar alertas globales</span>
-  </div>
-  <!-- ... -->
-  <div>
-    <div class="relative">
-      <input id="toggle" type="checkbox" class="hidden" />
-      <div class="block bg-gray-300 w-14 h-8 rounded-full"></div>
-      <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
-    </div>
-  </div>
-</div>
+<app-toggle 
+id="alertasGlabales"
+label="Enviar alertas globales" 
+[checked]="options['alertasGlobales']"
+(change)='onToggleChange($event, "alertasGlabales")'></app-toggle>
 
+<app-toggle 
+id="notificacionPush"
+label="Enviar notificación push" 
+[checked]="options['notificacionPush']"
+(change)='onToggleChange($event, "notificacionPush")'></app-toggle>
 
-<div class="grid grid-cols-4 gap-4 p-4">
-  <div>
-    <span class="ml-3 text-gray-700">Enviar notificación push</span>
-  </div>
-  <!-- ... -->
-  <div>
-    <div class="relative">
-      <input id="toggle" type="checkbox" class="hidden" />
-      <div class="block bg-gray-300 w-14 h-8 rounded-full"></div>
-      <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
-    </div>
-  </div>
-</div>
+<app-toggle
+id="enviarSMS"
+label="Enviar SMS" 
+[checked]="options['enviarSMS']" 
+(change)='onToggleChange($event, "enviarSMS")'></app-toggle>
 
-
-<div class="grid grid-cols-4 gap-4 p-4">
-  <div>
-    <span class="ml-3 text-gray-700">Enviar SMS</span>
-  </div>
-  <!-- ... -->
-  <div>
-    <div class="relative">
-      <input id="toggle" type="checkbox" class="hidden" />
-      <div class="block bg-gray-300 w-14 h-8 rounded-full"></div>
-      <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
-    </div>
-  </div>
-</div>
-
-
-<div class="grid grid-cols-4 gap-4 p-4">
-  <div>
-    <span class="ml-3 text-gray-700">Enviar mensaje WhatsApp</span>
-  </div>
-  <!-- ... -->
-  <div>
-    <div class="relative">
-      <input id="toggle" type="checkbox" class="hidden" />
-      <div class="block bg-gray-300 w-14 h-8 rounded-full"></div>
-      <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
-    </div>
-  </div>
-</div>
+<app-toggle 
+id="mensajeWhatsApp"
+label="Enviar mensaje WhatsApp" 
+[checked]="options['mensajeWhatsApp']" 
+(change)='onToggleChange($event, "mensajeWhatsApp")'></app-toggle>
 

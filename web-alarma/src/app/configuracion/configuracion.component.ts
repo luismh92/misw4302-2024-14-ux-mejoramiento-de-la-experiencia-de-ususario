@@ -12,4 +12,23 @@ export class ConfiguracionComponent implements OnInit {
   ngOnInit() {
   }
 
+  options: { [key: string]: boolean } = {
+    tiempoReal: false,
+    autoridades: false,
+    alertasGlobales: false,
+    notificacionPush: false,
+    enviarSMS: false,
+    mensajeWhatsApp: false,
+  };
+
+  onToggleChange(event: boolean, id: any): void {
+    console.log(event)
+    if (id in this.options) {
+      this.options[id] = event;
+      console.log('Options updated:', this.options);
+    } else {
+      console.error(`Invalid option id: ${id}`);
+    }
+  }
+
 }

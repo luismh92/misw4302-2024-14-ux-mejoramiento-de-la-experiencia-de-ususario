@@ -1,0 +1,7 @@
+.dot {
+  transition: transform 0.2s ease-in;
+}
+
+input:checked + div .dot {
+  transform: translateX(100%);
+}

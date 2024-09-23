@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ConfiguracionComponent } from './configuracion.component';
 import { RouterModule } from '@angular/router';
 import { ConfiguracionRoutes } from './configuracion.routing';
+import { ToggleComponent } from '../../components/toggle/toggle.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,7 @@ import { ConfiguracionRoutes } from './configuracion.routing';
     RouterModule,
     ConfiguracionRoutes
   ],
-  declarations: [ConfiguracionComponent],
+  declarations: [ConfiguracionComponent, ToggleComponent],
   exports: [ConfiguracionComponent]
 })
 export class ConfiguracionModule { }
