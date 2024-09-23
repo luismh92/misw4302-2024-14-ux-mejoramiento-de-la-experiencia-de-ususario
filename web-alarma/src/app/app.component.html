@@ -190,9 +190,30 @@
       <a href="#" class=" hover:text-blue-300"> 
         <span class="material-icons text-gray-500">notifications</span>
       </a>
-      <a href="#" class=" hover:text-blue-300"> 
-        <span class="material-icons text-gray-500">account_circle</span>
-      </a>
+      <a  (click)="toggleDropdown()" class=""> 
+      <div class="relative inline-block text-left">
+        <div>
+            <span class="material-icons text-gray-500">account_circle</span>
+        </div>
+        <div
+          *ngIf="isOpen"
+          class="absolute p-5 right-0 z-10 mt-4 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="options-menu"
+        >
+          <article class="text-wrap ...">
+            <h2 class="text-2xl pb-2" >Perfil de usuario</h2>
+            <p class="text-sm pb-2">Nombre: Jane Smith</p>
+            <p class="text-sm pb-2">Email: jane.smith&#64;hotmail.com</p>
+            <p class="text-sm ">Estado de verificación: Verificado</p>
+          </article>
+          <div class="flex justify-end mt-4">
+            <a class="text-sm underline">Logout</a>
+          </div>
+        </div>
+      </div>
+    </a>
     </nav>
     <div class="md:hidden">
       <button id="menu-toggle" class="text-white focus:outline-none">
@@ -237,6 +258,9 @@
     <router-outlet />
   </div>
 </div>
+
+
+
 
 
 
