@@ -15,17 +15,5 @@ export class AppComponent {
   title = 'web-alarma';
 
 
-  isOpen = false;
-
-  toggleDropdown() {
-    this.isOpen = !this.isOpen;
-  }
-
-  @HostListener('document:click', ['$event'])
-  closeDropdown(event: MouseEvent) {
-    const target = event.target as HTMLElement;
-    if (!target.closest('.relative')) {
-      this.isOpen = false;
-    }
-  }
+  
 }
