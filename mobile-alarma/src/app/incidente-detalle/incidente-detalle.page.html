@@ -11,44 +11,33 @@
 
 <ion-content class="ion-padding">
   
-  <h2 class="alert-title">Robo Av. Principal</h2>
+  <h2 class="alert-title" style="text-align: center; font-size: 1.4rem; margin-bottom: 1rem;">Robo Av. Principal</h2>
 
-  <h3 class="description-tittle">Descripción</h3>
+  <h3 class="description-title" style="font-size: 1.2rem; margin-bottom: 1rem; margin-top: 3rem;">Descripción</h3>
 
-  <div class="incident-description">
-    <p>
-      Se reportó un robo en la zona cercana a la Av. Principal.
-      La víctima informó que un individuo armado la interceptó y le quitó sus pertenencias.
+  <div class="incident-description" style="margin-bottom: 1.5rem; margin-top: 2rem;">
+    <p style="font-size: 1rem; line-height: 1.5;">
+      Se reportó un robo en la zona cercana a la Av. Principal. La víctima informó que un individuo armado la interceptó y le quitó sus pertenencias.
     </p>
   </div>
 
-  <h4 class="media-title">Imágenes y Videos</h4>
+  <h4 class="media-title" style="font-size: 1.2rem; margin-bottom: 1rem; margin-top: 4rem;">Imágenes y Videos</h4> <!-- Se ajusta el margen superior -->
 
-  <ion-content>
-    <div class="grid gap-4 pt-10">
-      <ion-grid>
-        <ion-row class="grid-cols-12 gap-2">
-          <ion-col size="1" class="arrow-right">
-            &lt;
-          </ion-col>
-          <ion-col size="3">
-            <img class="h-auto max-w-full rounded-lg object-cover" 
-              src="https://res.cloudinary.com/graham-media-group/image/upload/f_auto/q_auto/c_scale,w_640/v1/media/gmg/AKRTLLU44NDIHEMVQ2YO6K5GCU.png?_a=DAJAUVWIZAAA" alt="">
-          </ion-col>
-          <ion-col size="3">
-            <img class="h-80 max-w-full rounded-lg object-cover" 
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXXtohFKEGzuGNWKc3-n3E1IYLDfrv-8athA&s" alt="">
-          </ion-col>
-          <ion-col size="3">
-            <img class="h-80 max-w-full rounded-lg object-cover" 
-              src="https://www.thestatesman.com/wp-content/uploads/2022/10/robbery-representational.jpg" alt="">
-          </ion-col>
-          <ion-col size="1" class="text-4xl font-bold text-gray-500 cursor-pointer text-left arrow-left">
-            &gt;
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
-  </ion-content>
-  
+  <ion-grid style="margin-top: 3rem;">
+    <ion-row>
+      <ion-col size="6" size-md="4" class="ion-text-center">
+        <img src="https://res.cloudinary.com/graham-media-group/image/upload/f_auto/q_auto/c_scale,w_640/v1/media/gmg/AKRTLLU44NDIHEMVQ2YO6K5GCU.png?_a=DAJAUVWIZAAA" 
+             alt="Imagen 1" class="rounded-lg object-cover" style="width: 100%; height: auto;">
+      </ion-col>
+      <ion-col size="6" size-md="4" class="ion-text-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXXtohFKEGzuGNWKc3-n3E1IYLDfrv-8athA&s" 
+             alt="Imagen 2" class="rounded-lg object-cover" style="width: 100%; height: auto;">
+      </ion-col>
+      <ion-col size="6" size-md="4" class="ion-text-center">
+        <img src="https://www.thestatesman.com/wp-content/uploads/2022/10/robbery-representational.jpg" 
+             alt="Imagen 3" class="rounded-lg object-cover" style="width: 100%; height: auto;">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
