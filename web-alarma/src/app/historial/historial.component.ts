@@ -13,7 +13,7 @@ export class HistorialComponent implements OnInit {
   }
 
   navigateToIncidente(){
-    this.router.navigate(['/incidente'])
+    this.router.navigate(['/alert/incidente'])
   }
 
 }

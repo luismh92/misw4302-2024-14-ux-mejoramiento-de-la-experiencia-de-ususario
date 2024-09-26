@@ -14,7 +14,7 @@ export class MisIncidentesComponent implements OnInit {
   }
 
   navigateToIncidente(){
-    this.router.navigate(['/incidente'])
+    this.router.navigate(['/alert/incidente'])
   }
 
 }

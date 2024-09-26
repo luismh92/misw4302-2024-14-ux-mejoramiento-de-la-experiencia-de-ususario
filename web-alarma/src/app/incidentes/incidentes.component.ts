@@ -14,7 +14,7 @@ export class IncidentesComponent implements OnInit {
   }
 
   goToIncidente() {
-    this.router.navigate(['/incidente']);
+    this.router.navigate(['/alert/incidente']);
   }
 
 }

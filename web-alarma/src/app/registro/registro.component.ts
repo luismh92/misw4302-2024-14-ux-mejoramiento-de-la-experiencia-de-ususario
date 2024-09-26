@@ -14,7 +14,7 @@ export class RegistroComponent implements OnInit {
   }
 
   navigateToIngreso() {
-    this.router.navigate(['/ingreso']); // Change to your desired route
+    this.router.navigate(['']); // Change to your desired route
   }
 
 }
