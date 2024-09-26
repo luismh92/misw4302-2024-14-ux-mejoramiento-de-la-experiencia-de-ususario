@@ -38,24 +38,24 @@
       </ion-note>
     </div>
 
-    <ion-button expand="full" style="background-color: black; color: white; margin-top: 10px;" (click)="adjuntar()">Adjuntar</ion-button>
+    <button mat-raised-button color="dark" type="submit" class="btn-action">
+      Adjuntar</button>
 
-    <ion-button expand="full" style="background-color: black; color: white; margin-top: 10px;" (click)="crearReporte()">Crear</ion-button>
+    <button mat-raised-button color="dark" type="submit" class="btn-action" (click)="crearReporte()">Crear</button>
   </div>
 
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="tab1" routerLink="/historial">
-        <img src="assets/imgs/historial.png" alt="Tab 1 Image" class="tab-image1">
-        <ion-label></ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="tab3" routerLink="/configuracion">
-        <img src="assets/imgs/config.png" alt="Tab 3 Image" class="tab-image3">
-        <ion-label></ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
 </ion-content>
 
+<ion-tab-bar slot="bottom">
+  <ion-tab-button tab="tab1" routerLink="/historial">
+    <img src="assets/imgs/historial.png" alt="Tab 1 Image" class="tab-image1">
+    <ion-label></ion-label>
+  </ion-tab-button>
 
+  <ion-tab-button tab="tab3" routerLink="/configuracion">
+    <img src="assets/imgs/config.png" alt="Tab 3 Image" class="tab-image3">
+    <ion-label></ion-label>
+  </ion-tab-button>
+</ion-tab-bar>
 
 
