@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',
   styleUrls: ['./inicio.page.scss'],
 })
-export class InicioPage implements OnInit {
+export class InicioPage {
+  constructor(private navCtrl: NavController) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  navigateToTabs() {
+    // Lógica para navegar a las pestañas
+    this.navCtrl.navigateForward('/tabs');
   }
 
+  // Método para navegar a otras páginas
+  goToPage(page: string) {
+    this.navCtrl.navigateForward(`/${page}`);
+  }
 }
