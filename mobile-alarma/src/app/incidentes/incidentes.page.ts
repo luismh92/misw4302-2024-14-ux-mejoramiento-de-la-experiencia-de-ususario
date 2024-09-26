@@ -10,7 +10,12 @@ export class IncidentesPage {
 
   constructor(private navCtrl: NavController) {}
 
-  // Función para navegar a la pantalla de Inicio
+  // Método para ir a la página de detalles del incidente
+  goToIncidenteDetalle() {
+    this.navCtrl.navigateForward('/incidente-detalle');
+  }
+
+  // Método para volver a la página de inicio
   navigateToInicio() {
     this.navCtrl.navigateBack('/inicio');
   }
