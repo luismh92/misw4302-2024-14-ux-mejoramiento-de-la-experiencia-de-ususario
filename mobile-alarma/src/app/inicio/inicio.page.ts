@@ -14,6 +14,11 @@ export class InicioPage {
     this.navCtrl.navigateForward('/tabs');
   }
 
+  navigateToIncidentes() {
+    // Navega a la página de detalle del incidente
+    this.navCtrl.navigateForward('/incidentes');
+  }
+
   // Método para navegar a otras páginas
   goToPage(page: string) {
     this.navCtrl.navigateForward(`/${page}`);
