@@ -14,7 +14,7 @@ export class IngresoComponent implements OnInit {
   }
 
   navigateToIncidentes() {
-    this.router.navigate(['/incidentes']); // Change to your desired route
+    this.router.navigate(['/alert/incidentes']); // Change to your desired route
   }
 
 }
