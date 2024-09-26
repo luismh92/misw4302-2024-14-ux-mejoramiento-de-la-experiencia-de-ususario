@@ -21,10 +21,6 @@ const routes: Routes = [
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
   {
-    path: 'tabs',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },
-  {
     path: 'incidentes',
     loadChildren: () => import('./incidentes/incidentes.module').then( m => m.IncidentesPageModule)
   },
@@ -43,6 +39,10 @@ const routes: Routes = [
   {
     path: 'contactos',
     loadChildren: () => import('./contactos/contactos.module').then( m => m.ContactosPageModule)
+  },
+  {
+    path: 'reporte-incidente',
+    loadChildren: () => import('./reporte-incidente/reporte-incidente.module').then( m => m.ReporteIncidentePageModule)
   }
   
 ];
