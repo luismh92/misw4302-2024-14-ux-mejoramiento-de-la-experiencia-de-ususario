@@ -11,6 +11,7 @@ ion-content {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
+    justify-content: center;
   }
   
   .image-button {
@@ -47,3 +48,11 @@ ion-content {
     margin-bottom: 4px; 
   }
   
+
+  .container-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
