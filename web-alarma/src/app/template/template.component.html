@@ -1,4 +1,4 @@
-<header class="p-4  border-gray-200 border-b-2  mb-4">
+<header class="pt-4 pb-4  border-gray-200 border-b-2  mb-4">
   <div _ngcontent-ng-c1090186114=""
     style="background-image: url('assets/Texturas.png');opacity: 0.05;width: 100%;height: 75px;z-index: -500;position: absolute;top: 0px;">
   </div>
@@ -12,12 +12,12 @@
     </div>
     <nav class="hidden md:flex space-x-4">
       <a href="#" class=" hover:text-blue-300">
-        <span class="material-icons text-gray-500">notifications</span>
+        <span class="material-icons text-gray-500 cursor-pointer">notifications</span>
       </a>
       <a (click)="toggleDropdown()" class="">
         <div class="relative inline-block text-left">
           <div>
-            <span class="material-icons text-gray-500">account_circle</span>
+            <span class="material-icons text-gray-500 cursor-pointer">account_circle</span>
           </div>
           <div *ngIf="isOpen"
             class="absolute p-5 right-0 z-10 mt-4 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
@@ -61,7 +61,7 @@
           <span class="material-icons mr-2">location_on</span>
           <span>Incidentes</span>
         </a>
-        <a href="/historial" class="flex items-center p-4 pl-20  hover:bg-gray-200 rounded-full">
+        <a href="/mis-incidentes" class="flex items-center p-4 pl-20  hover:bg-gray-200 rounded-full">
           <span class="material-icons mr-2">format_list_bulleted</span>
           <span>Mis Incidentes</span>
         </a>

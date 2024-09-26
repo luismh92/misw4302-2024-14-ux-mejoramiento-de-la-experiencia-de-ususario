@@ -15,6 +15,11 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'mis-incidentes',
+        loadChildren: () =>
+          import('../mis-incidentes/mis-incidentes.module').then((m) => m.MisIncidentesModule),
+      },
+      {
         path: 'historial',
         loadChildren: () =>
           import('../historial/historial.module').then((m) => m.HistorialModule),
@@ -24,6 +29,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('../incidentes/incidentes.module').then((m) => m.IncidentesModule),
       },
+      {
+        path: 'incidente',
+        loadChildren: () =>
+          import('../incidente/incidente.module').then((m) => m.IncidenteModule),
+      }
     ],
   },
 ];
