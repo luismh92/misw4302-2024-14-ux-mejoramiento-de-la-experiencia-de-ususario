@@ -11,7 +11,9 @@
 
   <div class="alert-app-text">ALERT APP</div>
 
+  <div class="form-container">
   <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <br><span class="custom-control">Correo Electrónico</span><br>
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Correo Electrónico</mat-label>
       <input matInput formControlName="email" type="email" placeholder="Introduce tu correo" required>
@@ -19,7 +21,7 @@
         Correo no válido.
       </mat-error>
     </mat-form-field>
-
+    <span class="custom-control">Contraseña</span><br>
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Contraseña</mat-label>
       <input matInput formControlName="password" type="password" placeholder="Introduce tu contraseña" required>
@@ -28,22 +30,19 @@
       </mat-error>
     </mat-form-field>
 
-    
-    <button mat-raised-button color="dark" type="submit" [disabled]="!loginForm.valid">
-      Iniciar Sesión
+
+    <button mat-raised-button color="dark" type="submit" class="btn-action">
+      Ingresar
     </button>
-  </form>
 
-  <div class="register-container">
-  
-    <button mat-button color="accent" class="register-button" (click)="goToRegister()">Regístrate</button>
-    
-   
-    <div class="image-gallery">
-      <img src="assets/imgs/image1.png" alt="Image 1">
-      <img src="assets/imgs/image2.png" alt="Image 2">
-      <img src="assets/imgs/image3.png" alt="Image 3">
+    <div class="register-container">
+      <div class="image-gallery">
+        <a mat-button class="register-button" (click)="goToRegister()">Regístrate&nbsp;&nbsp;ó</a>
+        <img src="assets/imgs/google-logo.png" alt="Image 3">
+        <img src="assets/imgs/facebook-logo.png" alt="Image 2">
+        <img src="assets/imgs/linkedin-logo.png" alt="Image 1">
+      </div>
     </div>
-  </div>
-
+  </form>
+</div>
 </ion-content>
