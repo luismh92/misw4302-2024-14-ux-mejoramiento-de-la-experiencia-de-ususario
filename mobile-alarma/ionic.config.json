@@ -1,0 +1,7 @@
+{
+  "name": "mobile-alarma",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
