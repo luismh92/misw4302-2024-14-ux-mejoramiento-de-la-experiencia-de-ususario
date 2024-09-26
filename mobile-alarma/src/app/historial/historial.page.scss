@@ -1,0 +1,41 @@
+ion-content {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding-top: 20px; 
+  }
+  
+  .incident-list {
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+  }
+  
+  ion-item {
+    --background: transparent; 
+    border-bottom: 1px solid #ccc; 
+  }
+  
+  h2 {
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace; 
+  }
+  
+  
+  .incident-checkbox {
+    --background: green; 
+    --border-radius: 5px; 
+  }
+
+  .tab-image2 {
+    width: 60px;  
+    height: auto; 
+    margin-bottom: 4px; 
+  }
+
+  .tab-image3 {
+    width: 40px;  
+    height: auto; 
+    margin-bottom: 4px; 
+  }
+  
