@@ -39,3 +39,13 @@ ion-content {
     margin-bottom: 4px; 
   }
   
+
+  .custom-checkbox {
+    --background: transparent; // Background color when unchecked
+    --border-color: #858585; // Border color
+    --color: #858585; // Color when unchecked
+    --checkbox-background-checked: #858585; // Color when checked
+    --border-color-checked: #858585 ; // Border color when checked
+    // Optionally, change the size of the checkbox
+    --size: 20px; // Adjust size if necessary
+  }
