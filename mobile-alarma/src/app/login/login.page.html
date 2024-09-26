@@ -13,17 +13,15 @@
 
   <div class="form-container">
   <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
-    <br><span class="custom-control">Correo Electrónico</span><br>
+    <br><span class="custom-control">Correo Electrónico</span>
     <mat-form-field appearance="outline" class="full-width">
-      <mat-label>Correo Electrónico</mat-label>
       <input matInput formControlName="email" type="email" placeholder="Introduce tu correo" required>
       <mat-error *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
         Correo no válido.
       </mat-error>
     </mat-form-field>
-    <span class="custom-control">Contraseña</span><br>
+    <span class="custom-control">Contraseña</span>
     <mat-form-field appearance="outline" class="full-width">
-      <mat-label>Contraseña</mat-label>
       <input matInput formControlName="password" type="password" placeholder="Introduce tu contraseña" required>
       <mat-error *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
         Contraseña no válida.
@@ -37,7 +35,7 @@
 
     <div class="register-container">
       <div class="image-gallery">
-        <a mat-button class="register-button" (click)="goToRegister()">Regístrate&nbsp;&nbsp;ó</a>
+        <a class="register-button" href="/register">Regístrate&nbsp;&nbsp;ó</a>
         <img src="assets/imgs/google-logo.png" alt="Image 3">
         <img src="assets/imgs/facebook-logo.png" alt="Image 2">
         <img src="assets/imgs/linkedin-logo.png" alt="Image 1">
