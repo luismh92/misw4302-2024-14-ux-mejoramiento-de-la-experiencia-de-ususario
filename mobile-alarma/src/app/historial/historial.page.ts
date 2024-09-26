@@ -12,6 +12,9 @@ export class HistorialPage {
     { titulo: 'Accidente en la calle principal' },
     { titulo: 'Robo de bicicletas en el parque' },
     { titulo: 'Intruso en la zona residencial' },
+    { titulo: 'Robo en una casa deshabitada' },
+    { titulo: 'Robo de coches en el estacionamiento' },
+    { titulo: 'Robo de pertenencias en un evento público' }
   ];
 
   constructor(private navCtrl: NavController) {}
