@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToLogin()" color="light">
+        <ion-icon name="close"></ion-icon> 
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="logo-container">
+    <img src="assets/imgs/logo.png" alt="App Logo" class="logo">
+  </div>
+
+  <div class="images-container">
+    <img src="assets/imgs/image1.png" alt="Image 1" class="image">
+    <img src="assets/imgs/image2.png" alt="Image 2" class="image">
+    <img src="assets/imgs/image3.png" alt="Image 3" class="image">
+  </div>
+
+  <form [formGroup]="registerForm" (ngSubmit)="onRegister()" class="register-form">
+    <ion-item>
+      <ion-label position="floating">Nombres</ion-label>
+      <ion-input formControlName="firstName" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellidos</ion-label>
+      <ion-input formControlName="lastName" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input type="email" formControlName="email" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password" required></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" color="dark" type="submit">Registrar</ion-button>
+  </form>
+</ion-content>
