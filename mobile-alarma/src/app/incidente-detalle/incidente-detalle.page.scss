@@ -1,0 +1,47 @@
+.alert-title {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .incident-description {
+    font-family: 'Roboto Mono', monospace;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .media-title {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .description-tittle {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .media-gallery {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .media-item {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  ion-button {
+    --color: black;
+  }
+  
