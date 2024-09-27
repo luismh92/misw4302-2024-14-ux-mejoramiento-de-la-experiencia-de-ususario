@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Reporte Incidente</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="navigateToInicio()">
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="form-container">
+    <div class="form-field">
+      <h2 style="font-weight: bold; text-align: center;">Nombre del Incidente</h2>
+      <ion-input 
+        type="text" 
+        [(ngModel)]="nombreIncidente" 
+        maxlength="50" 
+        required 
+        class="rounded-input">
+      </ion-input>
+      <ion-note *ngIf="nombreIncidente && nombreIncidente.length > 50" color="danger">
+        El nombre no puede exceder 50 caracteres.
+      </ion-note>
+    </div>
+
+    <div class="form-field">
+      <h2 style="font-weight: bold; text-align: center;">Descripción:</h2>
+      <ion-textarea 
+        [(ngModel)]="descripcionIncidente" 
+        maxlength="500" 
+        required 
+        class="rounded-textarea">
+      </ion-textarea>
+      <ion-note *ngIf="descripcionIncidente && descripcionIncidente.length > 500" color="danger">
+        La descripción no puede exceder 500 caracteres.
+      </ion-note>
+    </div>
+
+    <button mat-raised-button color="dark" type="submit" class="btn-action">
+      Adjuntar</button>
+
+    <button mat-raised-button color="dark" type="submit" class="btn-action" (click)="crearReporte()">Crear</button>
+  </div>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button tab="tab1" routerLink="/historial">
+    <img src="assets/imgs/historial.png" alt="Tab 1 Image" class="tab-image1">
+    <ion-label></ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="tab3" routerLink="/configuracion">
+    <img src="assets/imgs/config.png" alt="Tab 3 Image" class="tab-image3">
+    <ion-label></ion-label>
+  </ion-tab-button>
+</ion-tab-bar>
+
+

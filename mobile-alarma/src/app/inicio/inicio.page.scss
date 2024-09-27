@@ -1,0 +1,58 @@
+ion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .incident-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .image-button {
+    margin: 20px 0;
+  }
+  
+  .button-image {
+    width: 100%; 
+    max-width: 300px; 
+    cursor: pointer;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
+
+  .tab-image1 {
+    width: 40px;  
+    height: auto; 
+    margin-bottom: 4px; 
+  }
+
+  .tab-image2 {
+    width: 60px;  
+    height: auto; 
+    margin-bottom: 4px; 
+  }
+
+  .tab-image3 {
+    width: 40px;  
+    height: auto; 
+    margin-bottom: 4px; 
+  }
+  
+
+  .container-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }

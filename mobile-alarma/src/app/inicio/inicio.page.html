@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container-inicio">
+    <div class="incident-title">
+      <h2>INCIDENTES EN LA ZONA</h2>
+    </div>
+
+    <div class="image-button" (click)="navigateToIncidentes()">
+      <img src="assets/imgs/mapa1.png" alt="Incidente" class="button-image">
+    </div>
+  </div>
+
+</ion-content>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="tab1" routerLink="/historial">
+      <img src="assets/imgs/historial.png" alt="Tab 1 Image" class="tab-image1">
+      <ion-label></ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab2" routerLink="/reporte-incidente">
+      <img src="assets/imgs/logo.png" alt="Tab 2 Image" class="tab-image2">
+      <ion-label></ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab3" routerLink="/configuracion">
+      <img src="assets/imgs/config.png" alt="Tab 3 Image" class="tab-image3">
+      <ion-label></ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>

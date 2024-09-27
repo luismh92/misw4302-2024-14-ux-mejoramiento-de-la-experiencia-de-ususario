@@ -1,0 +1,37 @@
+<app-toggle
+id="tiempoReal"
+label="Configurar ubicación en tiempo real" 
+[checked]="options['tiempoReal']"
+(change)='onToggleChange($event, "tiempoReal")'></app-toggle>
+
+
+<app-toggle 
+id="autoridades"
+label="Enviar alertas a las autoridades" 
+[checked]="options['autoridades']"
+(change)='onToggleChange($event, "autoridades")'></app-toggle>
+
+<app-toggle 
+id="alertasGlabales"
+label="Enviar alertas globales" 
+[checked]="options['alertasGlobales']"
+(change)='onToggleChange($event, "alertasGlabales")'></app-toggle>
+
+<app-toggle 
+id="notificacionPush"
+label="Enviar notificación push" 
+[checked]="options['notificacionPush']"
+(change)='onToggleChange($event, "notificacionPush")'></app-toggle>
+
+<app-toggle
+id="enviarSMS"
+label="Enviar SMS" 
+[checked]="options['enviarSMS']" 
+(change)='onToggleChange($event, "enviarSMS")'></app-toggle>
+
+<app-toggle 
+id="mensajeWhatsApp"
+label="Enviar mensaje WhatsApp" 
+[checked]="options['mensajeWhatsApp']" 
+(change)='onToggleChange($event, "mensajeWhatsApp")'></app-toggle>
+

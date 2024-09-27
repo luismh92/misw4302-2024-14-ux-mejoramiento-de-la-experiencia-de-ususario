@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contactos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="navigateToConfiguracion()">
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="contact-title">
+    <h2 style="font-family: 'Roboto Mono', monospace; font-weight: bold; text-align: center;">CONTACTOS</h2>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      Juan Pérez
+      <ion-checkbox slot="end" checked="true" class="custom-checkbox"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      María Gómez
+      <ion-checkbox slot="end" checked="true" class="custom-checkbox"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      Carlos Fernández
+      <ion-checkbox slot="end" checked="true" class="custom-checkbox"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      Ana López
+      <ion-checkbox slot="end" checked="true" class="custom-checkbox"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

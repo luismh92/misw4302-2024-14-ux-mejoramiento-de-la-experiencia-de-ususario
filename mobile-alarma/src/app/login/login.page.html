@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="logo-container">
+    <img src="assets/imgs/alert_icon.jpg" alt="App Logo" class="logo">
+  </div>
+
+  <div class="title-app">ALERT APP</div>
+
+  <div class="form-container">
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <br><span class="custom-control">Correo Electrónico</span>
+    <mat-form-field appearance="outline" class="full-width">
+      <input matInput formControlName="email" type="email" placeholder="Introduce tu correo" required>
+      <mat-error *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+        Correo no válido.
+      </mat-error>
+    </mat-form-field>
+    <span class="custom-control">Contraseña</span>
+    <mat-form-field appearance="outline" class="full-width">
+      <input matInput formControlName="password" type="password" placeholder="Introduce tu contraseña" required>
+      <mat-error *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+        Contraseña no válida.
+      </mat-error>
+    </mat-form-field>
+
+
+    <button mat-raised-button color="dark" type="submit" class="btn-action">
+      Ingresar
+    </button>
+
+    <div class="register-container">
+      <div class="image-gallery">
+        <a class="register-button" href="/register">Regístrate&nbsp;&nbsp;ó</a>
+        <img src="assets/imgs/google-logo.png" alt="Image 3">
+        <img src="assets/imgs/facebook-logo.png" alt="Image 2">
+        <img src="assets/imgs/linkedin-logo.png" alt="Image 1">
+      </div>
+    </div>
+  </form>
+</div>
+</ion-content>

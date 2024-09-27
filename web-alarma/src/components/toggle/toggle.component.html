@@ -1,0 +1,11 @@
+<div class="grid grid-cols-4 gap-4 p-4">
+  <div><span class="ml-3 text-gray-700">{{ label}}</span></div>
+  <div>
+    <div class="relative" (click)="toggle()">
+      <input id="toggle" type="checkbox" class="hidden" [checked]="checked" />
+      <div class="block bg-gray-300 w-14 h-8 rounded-full transition-colors duration-200 ease-in" [class.bg-green-500]="checked"></div>
+    <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-transform duration-200 ease-in" 
+         [class.translate-x-6]="checked"></div>
+    </div>
+  </div>
+</div>
